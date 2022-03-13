@@ -1,0 +1,24 @@
+{
+  "users": [
+    {
+      "username": "ritesh",
+      "age": "24",
+      "address": "pune",
+      "dept": "mech",
+      "salary": "50000000000000000000",
+      "ismarried": false,
+      "": "on",
+      "id": 1
+    },
+    {
+      "username": "ritesh",
+      "age": "24",
+      "address": "pune",
+      "dept": "mech",
+      "salary": "50000000000000000000",
+      "ismarried": true,
+      "": "on",
+      "id": 2
+    }
+  ]
+}
