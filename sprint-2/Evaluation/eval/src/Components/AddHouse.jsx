@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 const axios = require("axios")
-//  import { Rentals } from "./Rentals";
+//import { Rentals } from "./Rentals";
 
 export const AddHouse = () => {
     const [formdata, setFormdata] = useState([])
@@ -18,9 +18,9 @@ export const AddHouse = () => {
 
     function get(){
         axios.get("http://localhost:8080/houses").then(function(response){
-            console.log(response.formdata)
-            setFormdata(response.formdata);
-            console.log(formdata)
+            //console.log(response.formdata)
+            setData(response.formdata);
+            //console.log(formdata)
         })
     }
 

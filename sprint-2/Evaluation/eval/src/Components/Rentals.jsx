@@ -1,6 +1,8 @@
 // import "./Rentals.css";
+//import { useState } from "react";
 
 export const Rentals = () => {
+   //const [hdata,ksetData]= useState(data)
   return (
     <div className="rentalContainer">
       <div className="sortingButtons">
@@ -39,7 +41,7 @@ export const Rentals = () => {
                 <td className="areaCode">{house.areaCode}</td>
                 <td className="rent">{house.rent}</td>
                 <td className="preferredTenants">
-                  {/* Show text Both or Bachelors or Married based on values */}
+                  {house.status}
                 </td>
                 <td className="houseImage">
                   <img src={house.image} alt="house" />

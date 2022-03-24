@@ -1,0 +1,42 @@
+{
+  "houses": [
+    {
+      "name": "RITESH ",
+      "ownerName": "kamthe",
+      "address": "pune",
+      "areaCode": "411015",
+      "rent": "1000",
+      "status": "bachelor",
+      "bachelor": "on",
+      "id": 1
+    },
+    {
+      "name": "RITESH ",
+      "ownerName": "kamthe",
+      "address": "pune",
+      "areaCode": "411015",
+      "rent": "1000",
+      "status": "bachelor",
+      "bachelor": "on",
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "name": "sanket",
+      "ownerName": "patil",
+      "id": 4
+    },
+    {
+      "name": "RITESH JAYSING KAMTHE",
+      "address": "pune",
+      "ownerName": "hs",
+      "areaCode": "pune",
+      "rent": "4101",
+      "status": "bachelor",
+      "bachelor": "on",
+      "id": 5
+    }
+  ]
+}
