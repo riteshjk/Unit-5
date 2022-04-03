@@ -1,0 +1,32 @@
+{
+    "products":[
+        {
+            "name" : "SmartPhone",
+            "price": 30,
+            "id" : 1,
+            "image":"https://rukminim2.flixcart.com/image/312/312/ktketu80/mobile/c/g/4/iphone-13-pro-max-mlll3hn-a-apple-original-imag6vpg3r7dyvhm.jpeg?q=70",
+            "description":"iPhone, USB-C to Lightning Cable, Documentation"
+        },
+        {
+            "name" : "Watch",
+            "price" : 20,
+            "id" : 2,
+            "image" : "https://rukminim2.flixcart.com/image/495/594/l0pm3680/watch/9/u/k/rainbow-001-online-stuff-store-men-original-imagcfnyb8ua5fdw.jpeg?q=50",
+            "description": "Rainbow 001 Analog Watch - For Men"
+        },
+        {
+            "name" : "Shirt",
+            "price" : 50,
+            "id" : 3,
+            "image" :"https://rukminim2.flixcart.com/image/800/960/ku5ufm80/shirt/0/h/g/39-pcsfsslp612572-peter-england-original-imag7c8zcmuz6hqu.jpeg?q=50",
+            "description": "PETER ENGLAND Men Slim Fit Solid Casual Shirt"
+        },
+        {
+            "name" : "Pants",
+            "price" : 100,
+            "id" : 4,
+            "image" :"https://rukminim2.flixcart.com/image/495/594/jydaqa80/jean/g/z/h/38-epssprcrs-lblue-urbano-fashion-original-imafgmhbhhgnucwa.jpeg?q=50",
+            "description":"Alpha Fashion Slim Men White Jeans"
+        }
+    ]
+}
