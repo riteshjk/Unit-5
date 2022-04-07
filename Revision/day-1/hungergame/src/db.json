@@ -1,0 +1,181 @@
+{
+    "data":[
+        {
+            "name":"Noma (Copenhagen, Denmark)",
+            "img":"https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6470125/1820/1214/m1/fpnw/wm1/i80hbla2s6wsmd6jaaoeipipz7uvnmxydfidhnsvkwdivvi92u99nvchp3dq19ey-.jpg?1559306650&s=4cfcd1613939f0bbdb3f2b068aa8a6fe",
+            "category":["Continetal", "Pizza", "Asian", "Desserts"],
+            "cost_for_one":200,
+            "cost_for_two":380,
+            "rating":"4",
+            "votes":774,
+            "review":5454,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":true
+            },
+            "id":1
+        },
+        {
+            "name":"Den (Tokyo, Japan) ",
+            "img":"https://th.bing.com/th/id/R.aa42620032b2e9aab863d383d3d713f6?rik=4d35Kpv9CyHP0w&riu=http%3a%2f%2fi.huffpost.com%2fgen%2f1149308%2fimages%2fo-MEDITERRANEAN-DIET-BRAIN-facebook.jpg&ehk=uarOH4hUn45yD5XAKwsqPgMr%2bs0NIzlkBpC%2bLmnhnns%3d&risl=&pid=ImgRaw&r=0",
+            "category":["Continetal", "Pizza", "Asian", "Desserts"],
+            "cost_for_one":2000,
+            "cost_for_two":3800,
+            "rating":"4.8",
+            "votes":664,
+            "review":5000,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":false
+            },
+            "id":2
+        },
+        {
+            "name":"The Chairman (Hong Kong) *Highest Climber Award*            ",
+            "img":"https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "category":["Continetal", "Pizza", "Asian", "Desserts"],
+            "cost_for_one":2500,
+            "cost_for_two":4800,
+            "rating":"3",
+            "votes":700,
+            "review":6000,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":true
+            },
+            "id":3
+        },
+        {
+            "name":" Odette (Singapore) *Best Restaurant in Asia*            ",
+            "img":"https://images.pexels.com/photos/704569/pexels-photo-704569.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+            "category":["Continetal", "Pizza", "Asian", "Desserts"],
+            "cost_for_one":200,
+            "cost_for_two":400,
+            "rating":"2.5",
+            "votes":850,
+            "review":5000,
+            "payment_method":{
+                "cash":true,
+                "card":true,
+                "upi":true
+            },
+            "id":4
+        },
+        {
+            "name":"Asador Etxebarri (Axpe, Spain)            ",
+            "img":"https://th.bing.com/th/id/R.9178cf7ad02386b1a13a28a453be75b7?rik=k77F5Yw7aiE5yg&riu=http%3a%2f%2fhellolittlehome.com%2fwp-content%2fuploads%2f2017%2f10%2fvegetarian-comfort-food-recipes-crockpot-sweet-potato-curry-salt-and-lavender-2.jpg&ehk=4G2dDZCyDXtbTg5z5t%2fQN18LI3J45jkY0PpCBexNTyY%3d&risl=&pid=ImgRaw&r=0",
+            "category":["Continetal", "Pizza", "Asian", "Desserts"],
+            "cost_for_one":800,
+            "cost_for_two":1500,
+            "rating":"1.8",
+            "votes":774,
+            "review":5454,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":false
+            },
+            "id":5
+        },
+        {
+            "name":"Noma (Copenhagen, Denmark)",
+            "img":"https://cmkt-image-prd.freetls.fastly.net/0.1.0/ps/6470125/1820/1214/m1/fpnw/wm1/i80hbla2s6wsmd6jaaoeipipz7uvnmxydfidhnsvkwdivvi92u99nvchp3dq19ey-.jpg?1559306650&s=4cfcd1613939f0bbdb3f2b068aa8a6fe",
+            "category":["Continetal", "Pizza", "Asian", "Desserts"],
+            "cost_for_one":1000,
+            "cost_for_two":1800,
+            "rating":"3.2",
+            "votes":774,
+            "review":5454,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":true
+            },
+            "id":6
+        },
+        {
+            "name":"Indian Accent",
+            "img":"https://www.tripsavvy.com/thmb/9tF4BIKDhlajH4PQIj_rkXmWuWU=/1000x1000/smart/filters:no_upscale()/26-5adafa56c6733500373c3cf5.jpg",
+            "category":["continentals","asian","indian","Desert"],
+            "cost_for_one":2000,
+            "cost_for_two":3000,
+            "rating":"4.5",
+            "votes":1000,
+            "review":8000,
+            "payment_method":{
+                "cash":true,
+                "card":true,
+                "upi":true
+            },
+            "id":7
+            
+        },
+        {
+            "name":"BALLYGUNGE PLACE, KOLKATA",
+            "img":"https://www.greavesindia.co.uk/wp-content/uploads/2017/11/2-1559AD.jpg",
+            "category":["continentals","asian","indian","Desert"],
+            "cost_for_one":1500,
+            "cost_for_two":2500,
+            "rating":"2.5",
+            "votes":800,
+            "review":600,
+            "payment_method":{
+                "cash":true,
+                "card":true,
+                "upi":false
+            },
+            "id":8
+        },
+        {
+            "name":"1559 AD, UDAIPUR",
+            "img":"https://www.greavesindia.co.uk/wp-content/uploads/2017/11/5-Agashiye.jpg",
+            "category":["continentals","asian","indian","Desert"],
+            "cost_for_one":4500,
+            "cost_for_two":6000,
+            "rating":"4.8",
+            "votes":1800,
+            "review":1600,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":true
+            },
+            "id":9
+        },
+        {
+            "name":"AISH, HYDERABAD",
+            "img":"https://www.greavesindia.co.uk/wp-content/uploads/2017/11/4-Aish.jpg",
+            "category":["continentals","asian","indian","Desert"],
+            "cost_for_one":1000,
+            "cost_for_two":1500,
+            "rating":"3.8",
+            "votes":600,
+            "review":300,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":false
+            },
+            "id":10
+        },
+        {
+            "name":"AGASHIYE, AHMEDABAD",
+            "img":"https://www.greavesindia.co.uk/wp-content/uploads/2017/11/7-Amethyst.jpg",
+            "category":["continentals","asian","indian","Desert"],
+            "cost_for_one":9500,
+            "cost_for_two":11500,
+            "rating":"1.5",
+            "votes":6500,
+            "review":6900,
+            "payment_method":{
+                "cash":true,
+                "card":false,
+                "upi":true
+            },
+            "id":11
+        }
+    ]
+}
