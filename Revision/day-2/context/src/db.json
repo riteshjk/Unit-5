@@ -1,0 +1,13 @@
+{
+  "users": [
+    {
+      "name": "RITESH JAYSING KAMTHE",
+      "age": "24",
+      "date_of_birth": "2022-04-06",
+      "state_of_Residence": "pune",
+      "address": "pune",
+      "pin_code": "411015",
+      "id": 1
+    }
+  ]
+}
