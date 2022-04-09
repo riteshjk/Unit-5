@@ -11,7 +11,7 @@ export const Page2=()=>{
 
     if(name.length === 0 || age.length === 0 || date_of_birth.length === 0 ){
         alert ("please fill the first form")
-        navigate("/registration/one")
+        return navigate("/registration/one")
     }
     const disable = state_of_Residence.length === 0 || address.length === 0 || pin_code.length === 0;
 
