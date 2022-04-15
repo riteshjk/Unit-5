@@ -4,6 +4,7 @@ import {getTodosData} from "../Redux/Todos/action";
 import {useDispatch,useSelector} from "react-redux";
 import styled from "styled-components";
 import { Sidebar } from "./Sidebar";
+import { useParams,useNavigate } from "react-router-dom";
 
 
 const initState={
@@ -64,6 +65,9 @@ const reducer =(store,{type,payload})=>{
 
         case "RESET":
             return {...initState};
+        
+        case "UPDATE_FROM_SERVER":
+            return {...store,...payload};
 
         default:
             return store;
@@ -73,7 +77,7 @@ const reducer =(store,{type,payload})=>{
 
 
 
-export const TodosCreate =()=>{
+export const TodosEdit =()=>{
     const [state , dispatch] = React.useReducer(reducer,initState);
 
     const reduxDispatch = useDispatch();
@@ -86,19 +90,51 @@ export const TodosCreate =()=>{
 
     const {todos} = useSelector((store)=>store.todos);
 
-    const createNewTask = () =>{
-        const payload={...state};
-        fetch(`http://localhost:8080/todos`,{
-            method:"POST",
+    const {id}= useParams();
+
+    const navigate = useNavigate();
+    React.useEffect(()=>{
+        fetch(`http://localhost:8080/todos/${id}`)
+        .then((res)=>res.json())
+        .then((res)=>{
+            dispatch({
+                type:"UPDATE_FROM_SERVER",
+                payload:res
+            })
+        })
+
+    },[])
+
+    const EditTask=()=>{
+        const payload ={...state}
+        fetch(`http://localhost:8080/todos/${id}`,{
+            method:"PUT",
             headers:{
                 "Content-Type":"application/json"
             },
             body:JSON.stringify(payload)
+
+
         })
         .then(()=>reduxDispatch(getTodosData()))
-        .then(()=>dispatch({type:"RESET"}))
-    
+        .then(()=>navigate("/"))
+
+
     }
+
+    // const createNewTask = () =>{
+    //     const payload={...state};
+    //     fetch(`http://localhost:8080/todos`,{
+    //         method:"POST",
+    //         headers:{
+    //             "Content-Type":"application/json"
+    //         },
+    //         body:JSON.stringify(payload)
+    //     })
+    //     .then(()=>reduxDispatch(getTodosData()))
+    //     .then(()=>dispatch({type:"RESET"}))
+    
+    // }
     return(
     
 
@@ -183,7 +219,7 @@ export const TodosCreate =()=>{
                     )}
                 </div>
             </div>
-            <button onClick={createNewTask}>CREATE TASK</button>
+            <button onClick={EditTask}>EDIT TASK</button>
          
             </Grid2>
         </Container>

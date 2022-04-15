@@ -1,5 +1,12 @@
-
+import styled from "styled-components";
 import { useState,useEffect } from "react";
+
+
+const Container = styled.div`
+padding:25px;
+`
+
+
 export const Profile=({token,username})=>{
 
     const [todo,setTodo]= useState('');
@@ -19,12 +26,13 @@ export const Profile=({token,username})=>{
    },[])
 
     return(
-        <div>
+        <Container>
             <h1>Profile</h1>
             <p>Name:{todo.name}</p>
             <p>Email:{todo.email}</p>
             <p>Mobile:{todo.mobile}</p>
             <p>Description:{todo.description}</p>
-        </div>
+            <hr/>
+        </Container>
     )
 }
