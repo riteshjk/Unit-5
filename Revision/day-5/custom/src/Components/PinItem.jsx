@@ -13,7 +13,7 @@ export const PinItem=React.forwardRef(({onChange,onBackspace,max},ref)=>{
         console.log(e.keyCode)
         switch(e.keyCode){
             case 8:{
-                if(e.target.value) onBackspace(e.target)
+                if(!e.target.value) onBackspace(e.target.value)
                 
                 break;
 
