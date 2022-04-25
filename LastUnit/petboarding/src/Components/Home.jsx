@@ -30,47 +30,59 @@ export const Home = ()=>{
         setData(showdata)
     }
 
-    const handlesort=(value)=>{
+    const handlesort=(val)=>{
         //console.log(value)
-       let x=data.sort((a, b) => Number(b.value) - Number(a.value));
-       setData(x);
+      let x=data.sort((a,b)=>{
+          return Number(a[val])-Number(b[val])
+      })
+      setData([...x]);
+        //console.log(x)
     }
    
 
     return (
-        <div>
+        <div style={{
+            //"backgroundColor":"gray"
+        }}>
             <h1>Home</h1>
             <button onClick={()=>navigate("/listing/create")} style={{
                 "float": "left",
-                "margin-left": "50px",
+                "margin-left": "100px",
+                "margin":"auto"
             
             }}>Add Entity</button>
+            <div style={{
+               "display":"flex", 
+               "marginLeft":"400px",
+               "marginBottom":"50px"
+            }}>
             <input type="text" placeholder="" onChange={(e)=>(setCity(e.target.value))} style={{
-                 "margin-left": "-130px",
+                
             }}/>
-            <br/>
+            <br/>&nbsp;
             <button onClick={()=>{handlefilter(city)}}>Filter By City</button>
-            <br/>
+            <br/>&nbsp;&nbsp;&nbsp;&nbsp;
+            &nbsp;
             
         
             <input type="text" placeholder=""  onChange={(e)=>(setVerify(e.target.value))}/>
-            <br/>
-            <button onClick={()=>{handlefilter(verify)}}>Filter By verified</button><br/>
+            <br/>&nbsp;
+            <button onClick={()=>{handlefilter(verify)}}>Filter By verified</button><br/>&nbsp;&nbsp;&nbsp;&nbsp;
             <button onClick={handlereset}>Reset</button> <br/>
-            <br/>
+            <br/>&nbsp;
             <button onClick={()=>{handlesort("cost")}}>Sort By Cost</button>
             <br/>
             <br/>
             <button onClick={()=>{handlesort("rating")}}>Sort By Rating</button>
+            <br/>&nbsp;
             <br/>
-            <br/>
-
+            </div>
             <table style={{
-                    "width": "90%",
-                    "border": "1px solid black",
-                    "marginLeft": "50px",
-                    "backgroundColor":"teal",
-                    "color" : "white"
+                "margin":"auto",
+                "width":"95%",
+                "border": "1px solid black",
+                "backgroundColor":"teal",
+                "color" : "white"
                 }}>
                 <thead >
                     <tr style={{
