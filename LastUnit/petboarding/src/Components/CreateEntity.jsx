@@ -2,10 +2,13 @@ import {useDispatch} from 'react-redux';
 import {addentity} from "../Redux/CreateEntity/action";
 import { useState } from 'react';
 import axios from "axios";
+import {useNavigate} from "react-router-dom"
 
 export const CreateEntity = ()=>{
     const dispatch = useDispatch();
    const [data,setData] = useState({});
+   const navigate = useNavigate();
+
    const handlechnage =(e)=>{
     console.log(e.target.value);
     const {className,value}=e.target;
@@ -18,6 +21,8 @@ export const CreateEntity = ()=>{
         axios.post("http://localhost:8080/entity",data).then((res)=>{
             console.log(res.data)
         })
+        navigate("/")
+
     }
     return (
         <div> 

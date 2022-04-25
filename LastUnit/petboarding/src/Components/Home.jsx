@@ -1,12 +1,15 @@
 import axios from "axios";
 import {useEffect,useState} from "react";
 import { Link } from "react-router-dom";
+import {useNavigate} from "react-router-dom"
+
 
 export const Home = ()=>{
     const [data,setData] = useState([]);
     const [city,setCity] = useState("");
     const [verify,setVerify] = useState("");
     const [showdata,setshowdata] = useState([]);
+    const navigate = useNavigate();
 
     useEffect(()=>{
         axios.get("http://localhost:8080/entity").then((res)=>{
@@ -28,30 +31,52 @@ export const Home = ()=>{
     }
 
     const handlesort=(value)=>{
-        console.log(value)
-        let x= data.sort((a,b)=>{
-            return Number(a.value)>Number(b.value) ;
-        })
-        console.log(x)
-        setData(x);
+        //console.log(value)
+       let x=data.sort((a, b) => Number(b.value) - Number(a.value));
+       setData(x);
     }
+   
 
     return (
         <div>
             <h1>Home</h1>
-            <input type="text" placeholder="" onChange={(e)=>(setCity(e.target.value))}/>
+            <button onClick={()=>navigate("/listing/create")} style={{
+                "float": "left",
+                "margin-left": "50px",
+            
+            }}>Add Entity</button>
+            <input type="text" placeholder="" onChange={(e)=>(setCity(e.target.value))} style={{
+                 "margin-left": "-130px",
+            }}/>
+            <br/>
             <button onClick={()=>{handlefilter(city)}}>Filter By City</button>
             <br/>
+            
         
             <input type="text" placeholder=""  onChange={(e)=>(setVerify(e.target.value))}/>
+            <br/>
             <button onClick={()=>{handlefilter(verify)}}>Filter By verified</button><br/>
-            <button onClick={handlereset}>Reset</button>
-            <button onClick={()=>(handlesort("cost"))}>Sort By Cost</button>
-            <button onClick={()=>(handlesort("rating"))}>Sort By Rating</button>
+            <button onClick={handlereset}>Reset</button> <br/>
+            <br/>
+            <button onClick={()=>{handlesort("cost")}}>Sort By Cost</button>
+            <br/>
+            <br/>
+            <button onClick={()=>{handlesort("rating")}}>Sort By Rating</button>
+            <br/>
+            <br/>
 
-            <table>
-                <thead>
-                    <tr>
+            <table style={{
+                    "width": "90%",
+                    "border": "1px solid black",
+                    "marginLeft": "50px",
+                    "backgroundColor":"teal",
+                    "color" : "white"
+                }}>
+                <thead >
+                    <tr style={{
+                        "color":"red",
+                        "border": "1px solid black"
+                    }}>
                         <th>Name</th>
                         <th>City</th>
                         <th>Address</th>
@@ -65,7 +90,9 @@ export const Home = ()=>{
                     {data.map((item,index)=>{
                         return (
                             <tr key={index}>
-                                <Link to={`/listing/${item.id}`}><td>{item.name}</td></Link>
+                                <Link to={`/listing/${item.id}`} style={{
+                                    "color" : "white"
+                                }}><td>{item.name}</td></Link>
                                 <td>{item.city}</td>
                                 <td>{item.address}</td>
                                 <td>{item.capacity}</td>
